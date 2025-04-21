@@ -8,10 +8,4 @@ I try to keep it up to date with the latest adminer-version while using it and s
 ![Sreenshot of the theme](/adminer.pepa-linha-dark_ichier-screenshot.jpg "Screenshot")
 
 ## Installation
-1. copy the `adminer.pepa-linha-dark_ichier.css` file somewhere into your `adminer`-folder
-2. symlink a new `adminer.css` or `adminer-dark.css` in your `adminer`-root-folder to `adminer.pepa-linha-dark_ichier.css`
-
-alternatively:
-1. rename the `adminer.pepa-linha-dark_ichier.css` file to `adminer.css` or `adminer-dark.css`
-2. place it on the same level like your `adminer.php` file.
-
+copy the `adminer-dark.css` file into your `adminer.php`-folder, maybe rename to or symlink from `adminer.css`
