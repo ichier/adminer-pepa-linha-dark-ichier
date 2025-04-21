@@ -574,6 +574,7 @@ p code + a:visited:hover {
 #tables a.active + a {
     color: var(--color-text);
 }
+#tables a.active.structure::before,
 #tables a.active + a::before {
     content:'•';
     display:inline-block;
