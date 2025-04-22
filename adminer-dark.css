@@ -1,7 +1,7 @@
 /*
  * Modified Dark Theme by Pepa Linha v2.0.1
  * @credit  github.com/pepa-linha/Adminer-Design-Dark
- * modified by Ichier v0.6
+ * modified by Ichier v0.8
  * @credit  github.com/ichier/adminer-pepa-linha-dark-ichier
  * at least compatible to adminer 5.2.1 
  */
@@ -19,7 +19,10 @@
     --color-purple-700: #4b4c68;
     --color-purple-800: #312f42;
     --color-purple-900: #2e2c3e;
+    --color-purple-odd: #2d2b3b;
     --color-purple-1000: #2a2838;
+    --color-purple-1100: #262434;
+    --color-purple-cdd: #242232;
     --color-red: #e44747;
     --color-black: #000;
 
@@ -43,9 +46,10 @@
     /* Tables */
     --color-table-head: var(--color-purple-1000);
     --color-table-head-text: var(--color-purple);
-    --color-table-row-odd: rgba(173, 173, 173, 0.02);
+    --color-table-row-odd: #2d2b3b;
     --color-table-row-hover: var(--color-purple-1000);
-    --color-table-row-checked: var(--color-purple-1000);
+    --color-table-row-checked: var(--color-purple-1100);
+    --color-table-row-checked-odd: var(--color-purple-1100);
     --color-table-row-checked-highlight: var(--color-green);
     --shadow-table: 0 8px 40px rgba(0, 0, 0, 0.1);
 
@@ -193,7 +197,11 @@ th {
 
 .odds tbody tr:nth-child(2n) td,
 .odds tbody tr:nth-child(2n) th {
-    background:#2D2B3B;
+    background:var(--color-purple-odd);
+}
+.odds tbody tr.checked:nth-child(2n) td,
+.odds tbody tr.checked:nth-child(2n) th {
+    background:var(--color-purple-cdd);
 }
 
 tbody tr:hover td,
@@ -245,7 +253,9 @@ h3 + table,
 }
 
 .checkable tbody tr:hover td,
-.checkable tbody tr:hover th {
+.checkable tbody tr:hover th,
+.checkable tbody tr.checked:hover td,
+.checkable tbody tr.checked:hover th {
     background: var(--color-table-row-hover);
 }
 
