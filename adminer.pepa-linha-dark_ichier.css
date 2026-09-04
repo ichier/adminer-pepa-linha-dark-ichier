@@ -1,9 +1,9 @@
 /*
  * Modified Dark Theme by Pepa Linha v2.0.1
  * @credit  github.com/pepa-linha/Adminer-Design-Dark
- * modified by Ichier v0.8
+ * modified by Ichier v0.9
  * @credit  github.com/ichier/adminer-pepa-linha-dark-ichier
- * at least compatible to adminer 5.2.1 
+ * at least compatible to adminer 6.0.1
  */
 
 :root {
@@ -596,19 +596,19 @@ p code + a:visited:hover {
     display: none;
 }
 
-.js .column {
+.column {
     background: var(--color-table-head-text);
     border-radius: var(--ui-radius);
     padding: 2px;
 }
 
-.js .column:not(.hidden) {
-    display: inline-flex;
-    overflow: hidden;
+th:not(:hover) .column {
+    display: none;
 }
 
-.js .column a,
-.js .column a:hover {
+.column a,
+.column a:visited,
+.column a:hover {
     color: var(--color-table-head);
     padding: 0;
     width: 24px;
@@ -618,7 +618,7 @@ p code + a:visited:hover {
     text-indent: -4px; /* remove space in code */
 }
 
-.js .column a:hover {
+.column a:hover {
     background: var(--color-table-head);
     color: var(--color-table-head-text);
     text-decoration: none;
@@ -1109,6 +1109,9 @@ form p label {
     }
 }
 
+#menu>p.jsonly { margin-top:-1.2em; }
+#menu>p.jsonly::first-line { font-size:.6em; color:var(--color-text-muted); }
+#menu ul .js .hidden { display: none !important; }
 #filter-field { width:100%; }
 #suggest_tablefields_container { background:none; margin-left:-200px; }
 #suggest_tablefields_container+p .sqlarea { width:calc(100vw - 260px - 200px) !important; /*width:calc(100% - 200px) !important;*/ }
