@@ -1111,7 +1111,7 @@ form p label {
 
 #menu>p.jsonly { margin-top:-1.2em; }
 #menu>p.jsonly::first-line { font-size:.6em; color:var(--color-text-muted); }
-#menu ul .js .hidden { display: none !important; }
+#menu ul li.hidden { display: none !important; }
 #filter-field { width:100%; }
 #suggest_tablefields_container { background:none; margin-left:-200px; }
 #suggest_tablefields_container+p .sqlarea { width:calc(100vw - 260px - 200px) !important; /*width:calc(100% - 200px) !important;*/ }
